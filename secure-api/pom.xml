@@ -3,15 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.googlecode.redbox-mint</groupId>
     <artifactId>redbox-secure-api</artifactId>
-    <version>1.6.3-SNAPSHOT</version>
+    <version>1.8-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>ReDBox - Secure API</name>
     <parent>
         <groupId>com.googlecode.redbox-mint</groupId>
         <artifactId>redbox-project</artifactId>
-        <version>1.6.3-SNAPSHOT</version>
+        <version>1.8-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
+    <properties>
+        <groovy.version>2.3.4</groovy.version>
+    </properties>
     <dependencies>
         <!-- Fascinator Portal Dependencies -->
         <dependency>
@@ -19,8 +22,13 @@
             <artifactId>fascinator-portal</artifactId>
             <type>jar</type>
             <classifier>classes</classifier>
-            <version>1.1.5</version>
+            <version>1.2</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
         </dependency>
     </dependencies>
     <build>
